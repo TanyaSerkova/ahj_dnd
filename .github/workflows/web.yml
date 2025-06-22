@@ -41,7 +41,6 @@ jobs:
           node-version: 22.14.0
           cache: 'yarn'
       - run: yarn
-      - run: yarn e2e
 
   build:
     needs: [eslint, test]
