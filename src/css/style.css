@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #3a7dd4;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.container-column {
+    display: block;
+    box-sizing: border-box;
+    width: 280px;
+    padding: 8px;
+    margin: 0 4px;
+    border-radius: 3px;
+    background-color: #ebecf0;
+}
+
+.title {
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 0;
+    background-image: url('../img/dots.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: right bottom;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cards {
+    min-height: 40px;
+}
+
+.add-card {
+  padding: 8px;
+  font-weight: lighter;
+  color: #5e6c84;
+  cursor: pointer;
+}
+
+.card-item {
+    list-style-type: none;
+  position: relative;
+  padding: 8px;
+  padding-right: 25px;
+  margin-bottom: 6px;
+  border: 1px outset #ebecf0;
+  border-radius: 3px;
+  background-color: #ffffff;
+  font-weight: lighter;
+  word-wrap: break-word;
+}
+
+.dragged {
+  position: absolute;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.card-item-active {
+  background-color: #fafafa;
+}
+
+.delete-button {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #ebecf0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.delete-button-active {
+  display: inline-block;
+}
+
+.card-form {
+  display: none;
+}
+
+.card-form-active {
+  display: block;
+}
+
+.card-input {
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  overflow: auto;
+  width: 100%;
+  min-height: 80px;
+  padding: 8px;
+  margin-bottom: 6px;
+  border: 1px outset #ebecf0;
+  border-radius: 3px;
+  background-color: #ffffff;
+  font-family: inherit;
+  font-size: inherit;
+  color: #5e6c84;
+}
+
+.add-button {
+  width: 80px;
+  height: 35px;
+  padding: 8px;
+  margin: 0;
+  border: none;
+  border-radius: 3px;
+  background-color: #5aac44;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.cancel-button {
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  margin: 0 8px;
+  border: none;
+  background-color: transparent;
+  background-image: url('../img/cross.png');
+  background-size: cover;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.button-box {
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: right bottom;
+}
